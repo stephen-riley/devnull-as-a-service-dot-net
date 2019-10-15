@@ -4,6 +4,8 @@ A grossly over-engineered implementation of /dev/null as a service in ASP.NET Co
 # TODO
 - [ ] Base implementation in basic asp-net-core 3.0
 - [ ] Swaggerize
+- [ ] API versioning
+- [ ] Class-backed configuration
 - [ ] GETs on /dev/zero
 - [ ] Dockerize
 - [ ] RabbitMQ support?
