@@ -55,7 +55,6 @@ namespace DevNullService
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "/dev/null as a service (.NET) v1");
-                c.DisplayOperationId();
             });
 
             app.UseRouting();
