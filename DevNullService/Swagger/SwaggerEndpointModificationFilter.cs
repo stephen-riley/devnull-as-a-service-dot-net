@@ -17,6 +17,11 @@ namespace DevNullService.Swagger
                     Required = true,
                     Content = new Dictionary<string, OpenApiMediaType>
                     {
+                        ["application/octet-stream"] = new OpenApiMediaType
+                        {
+                            // an empty OpenApiSchema is required to make the file upload UI appear
+                            Schema = new OpenApiSchema()
+                        },
                         ["text/plain"] = new OpenApiMediaType
                         {
                             Schema = new OpenApiSchema { Type = "string" }

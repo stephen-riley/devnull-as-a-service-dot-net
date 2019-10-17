@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using DevNullService.Swagger;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +35,10 @@ namespace DevNullService
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "/dev/null as a service (.NET)", Version = "v1" });
                 c.EnableAnnotations();
                 c.OperationFilter<SwaggerEndpointModificationFilter>();
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
             });
         }
 
