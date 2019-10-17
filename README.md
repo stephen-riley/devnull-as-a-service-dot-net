@@ -3,9 +3,9 @@ A grossly over-engineered implementation of /dev/null as a service in ASP.NET Co
 
 # TODO
 - [x] Base implementation in basic asp-net-core 3.0
-- [ ] Swaggerize
-- [ ] Testing project (xUnit)
+- [x] Swaggerize
 - [ ] API versioning
+- [ ] Testing project (xUnit)
 - [ ] Class-backed configuration
 - [ ] Fancy logging
 - [ ] GETs on /dev/zero
