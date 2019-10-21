@@ -7,6 +7,7 @@ A grossly over-engineered implementation of /dev/null as a service in ASP.NET Co
 - [ ] API versioning (https://youtu.be/WFEE5yVJwGU)
 - [ ] Testing project (xUnit)
 - [ ] Class-backed configuration
+- [ ] Build on commit with GitHub Actions
 - [ ] Fancy logging
 - [ ] GETs on /dev/zero
 - [ ] Dockerize
