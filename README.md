@@ -6,12 +6,12 @@ A grossly over-engineered implementation of /dev/null as a service in ASP.NET Co
 
 - [x] Base implementation in basic asp-net-core 3.0
 - [x] Swaggerize
-- [ ] API versioning (https://youtu.be/WFEE5yVJwGU)
+- [x] API versioning [ref](https://youtu.be/WFEE5yVJwGU)
 - [ ] Testing project (xUnit)
 - [ ] Class-backed configuration
 - [ ] Build on commit with GitHub Actions
 - [ ] Fancy logging
 - [ ] GETs on /dev/zero
 - [ ] Dockerize
-- [ ] RabbitMQ support? (https://www.tutorialdocs.com/article/dotnet-generic-host.html)
-- [ ] Auth? (https://auth0.com/blog/how-to-build-and-secure-web-apis-with-aspnet-core-3/)
+- [ ] RabbitMQ support? [ref](https://www.tutorialdocs.com/article/dotnet-generic-host.html)
+- [ ] Auth? [ref](https://auth0.com/blog/how-to-build-and-secure-web-apis-with-aspnet-core-3/)
