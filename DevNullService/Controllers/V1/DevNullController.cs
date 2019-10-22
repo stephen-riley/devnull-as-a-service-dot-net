@@ -1,9 +1,10 @@
 using System.Threading.Tasks;
+using DevNullService.Contracts;
 using DevNullService.Swagger;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace DevNullService.Controllers
+namespace DevNullService.V1.Controllers
 {
     public class DevNullController : Controller
     {
@@ -13,7 +14,7 @@ namespace DevNullService.Controllers
         /// <remarks>
         /// `POST` data to this endpoint to synchronously copy it to the server's `/dev/null`.
         /// </remarks>
-        [HttpPost("/api")]
+        [HttpPost(ApiRoutes.Posts.PostData)]
         [ProducesResponseType(200)]
         [SwaggerOperation(OperationId = "PostData", Tags = new[] { Tags.PostData })]
         public async Task<IActionResult> PostData()
