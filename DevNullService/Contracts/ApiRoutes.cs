@@ -12,5 +12,10 @@ namespace DevNullService.Contracts
         {
             public const string PostData = Base + "/dev/null";
         }
+
+        public static class Gets
+        {
+            public const string GetNulls = Base + "/dev/null";
+        }
     }
 }

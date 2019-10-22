@@ -11,7 +11,7 @@ A grossly over-engineered implementation of /dev/null as a service in ASP.NET Co
 - [ ] Class-backed configuration
 - [ ] Build on commit with GitHub Actions
 - [ ] Fancy logging
-- [ ] GETs on /dev/zero
+- [x] GETs on /dev/zero
 - [ ] Dockerize
 - [ ] RabbitMQ support? [ref](https://www.tutorialdocs.com/article/dotnet-generic-host.html)
 - [ ] Auth? [ref](https://auth0.com/blog/how-to-build-and-secure-web-apis-with-aspnet-core-3/)

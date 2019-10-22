@@ -23,5 +23,17 @@ namespace DevNullService.V1.Controllers
             await this.Request.BodyReader.CopyToAsync(devnull);
             return Ok();
         }
+
+        [HttpGet(ApiRoutes.Gets.GetNulls)]
+        [ProducesResponseType(200)]
+        [SwaggerOperation(OperationId = "GetNulls", Tags = new[] { Tags.GetNulls })]
+        public async Task<IActionResult> GetNulls([FromQuery] int length = 1024)
+        {
+            var stream = System.IO.File.OpenRead("/dev/zero");
+            var buffer = new byte[length];
+            var zeroCount = await stream.ReadAsync(buffer, 0, length);
+
+            return File(buffer, "application/octet-stream");
+        }
     }
 }
