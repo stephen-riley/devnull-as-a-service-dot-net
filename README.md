@@ -7,8 +7,8 @@ A grossly over-engineered implementation of /dev/null as a service in ASP.NET Co
 - [x] [Base implementation in basic asp-net-core 3.0](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/base-implementation)
 - [x] [Swaggerize](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/swaggerized)
 - [x] [API versioning](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/api-versioning) [ref](https://youtu.be/WFEE5yVJwGU)
-- [ ] [Testing project (xUnit)](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/added-tests)
-- [ ] [Convert project to use nullable reference types](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/use-nullable-refs)
+- [x] [Testing project (xUnit)](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/added-tests)
+- [x] [Convert project to use nullable reference types](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/use-nullable-refs)
 - [ ] Turn on code analyzers with warnings as errors
 - [ ] Class-backed configuration
 - [ ] Build on commit with GitHub Actions
