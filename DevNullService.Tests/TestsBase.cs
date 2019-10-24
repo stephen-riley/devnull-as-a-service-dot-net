@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -38,15 +39,16 @@ namespace DevNullService.Tests
             return (response.StatusCode, content);
         }
 
-        protected async Task<(HttpStatusCode, byte[])> ExecutePostWithStringAsync(string request)
+        protected async Task<(HttpStatusCode, byte[])> ExecutePostWithStringAsync(string? request)
         {
             request ??= string.Empty;
             var buffer = Encoding.UTF8.GetBytes(request);
             return await ExecutePostWithBinaryAsync(buffer);
         }
 
-        protected async Task<(HttpStatusCode, byte[])> ExecutePostWithBinaryAsync(byte[] request)
+        protected async Task<(HttpStatusCode, byte[])> ExecutePostWithBinaryAsync([AllowNull] byte[] request)
         {
+            request ??= new byte[0];
             var response = await TestClient.PostAsJsonAsync(ApiRoutes.Posts.PostData, request);
             var content = await response.Content.ReadAsByteArrayAsync();
             return (response.StatusCode, content);
