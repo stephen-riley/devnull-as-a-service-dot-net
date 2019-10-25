@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
@@ -9,6 +10,11 @@ namespace DevNullService.Swagger
     {
         public void Apply(OpenApiOperation operation, OperationFilterContext context)
         {
+            if (operation == null)
+            {
+                throw new ArgumentNullException(nameof(operation));
+            }
+
             if (operation.OperationId == "PostData")
             {
                 operation.RequestBody = new OpenApiRequestBody
