@@ -24,11 +24,11 @@ namespace DevNullService.V1.Controllers
         {
             // Unfortunately, opening /dev/null for writing locks it to a single thread.
             // This is ugly, but at least we won't have this problem.
-            await devnullSemaphore.WaitAsync();
+            await devnullSemaphore.WaitAsync().ConfigureAwait(false);
             try
             {
                 using var devnull = System.IO.File.OpenWrite("/dev/null");
-                await this.Request.BodyReader.CopyToAsync(devnull);
+                await this.Request.BodyReader.CopyToAsync(devnull).ConfigureAwait(false);
             }
             finally
             {
@@ -54,9 +54,9 @@ namespace DevNullService.V1.Controllers
                 return BadRequest();
             }
 
-            var stream = System.IO.File.OpenRead("/dev/zero");
+            using var stream = System.IO.File.OpenRead("/dev/zero");
             var buffer = new byte[length];
-            var zeroCount = await stream.ReadAsync(buffer, 0, length);
+            var zeroCount = await stream.ReadAsync(buffer, 0, length).ConfigureAwait(false);
 
             return File(buffer, "application/octet-stream");
         }
