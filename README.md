@@ -18,7 +18,7 @@ This is completely, totally serious.  [Seriously.](https://www.google.com/search
 - [x] [API versioning](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/api-versioning) [ref](https://youtu.be/WFEE5yVJwGU)
 - [x] [Testing project (xUnit)](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/added-tests)
 - [x] [Convert project to use nullable reference types](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/use-nullable-refs)
-- [ ] Turn on code analyzers with warnings as errors
+- [x] [Turn on code analyzers with warnings as errors](https://github.com/stephen-riley/devnull-as-a-service-dot-net/tree/fxcop)
 - [ ] Class-backed configuration
 - [ ] Build on commit with GitHub Actions
 - [ ] Fancy logging
