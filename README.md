@@ -1,4 +1,4 @@
-# devnull-as-a-service-dot-net
+# /dev/null as a Service (.NET)
 
 A grossly over-engineered implementation of [/dev/null as a Service](https://devnull-as-a-service.com/) in ASP.NET Core 3.0.
 
