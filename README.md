@@ -2,7 +2,7 @@
 
 A grossly over-engineered implementation of [/dev/null as a Service](https://devnull-as-a-service.com/) in ASP.NET Core 3.0.
 
-[This is completely, totally serious.](https://www.google.com/search?q=this+is+a+joke&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiW65SonLblAhXYu54KHdffAqwQ_AUIEigB&biw=1440&bih=766)
+This is completely, totally serious.  [Seriously.](https://www.google.com/search?q=this+is+a+joke&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiW65SonLblAhXYu54KHdffAqwQ_AUIEigB&biw=1440&bih=766)
 
 ## Features
 
