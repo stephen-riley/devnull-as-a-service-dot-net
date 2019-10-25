@@ -1,10 +1,12 @@
 # devnull-as-a-service-dot-net
 
-A grossly over-engineered implementation of /dev/null as a service in ASP.NET Core 3.0
+A grossly over-engineered implementation of [/dev/null as a Service](https://devnull-as-a-service.com/) in ASP.NET Core 3.0.
+
+[This is completely, totally serious.](https://www.google.com/search?q=this+is+a+joke&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiW65SonLblAhXYu54KHdffAqwQ_AUIEigB&biw=1440&bih=766)
 
 ## Features
 
-- Implementation of ["/dev/null as a Service"](https://devnull-as-a-service.com/) that actually copies data to `/dev/null`  😂
+- Implementation of [/dev/null as a Service](https://devnull-as-a-service.com/) that actually copies data to `/dev/null`  😂
 - Supports `GET`s on `/dev/zero`
 - Live, interactive Swagger documentation
 - Uses latest [C# 8.0 features](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8), such as [Nullable Reference Types](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references)
